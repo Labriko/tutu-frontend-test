@@ -1,0 +1,51 @@
+/**
+ * Created by labriko on 21.12.14.
+ */
+
+.star-rating {
+    float:left;
+}
+
+.star-rating:not(:checked) > input {
+    display: none;
+}
+
+.star-rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    /*Дефолтный серый цвет звёзд*/
+    color:#ddd;
+}
+
+.star-rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.star-rating > input:checked ~ label {
+    color: gold;
+}
+
+.star-rating:not(:checked) > label:hover,
+.star-rating:not(:checked) > label:hover ~ label {
+    color: lightblue;
+}
+
+.star-rating > input:checked + label:hover,
+.star-rating > input:checked + label:hover ~ label,
+.star-rating > input:checked ~ label:hover,
+.star-rating > input:checked ~ label:hover ~ label,
+.star-rating > label:hover ~ input:checked ~ label {
+    color: orange;
+}
+
+.star-rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}

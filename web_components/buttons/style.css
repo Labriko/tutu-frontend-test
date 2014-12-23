@@ -1,0 +1,86 @@
+/**
+ * Created by labriko on 21.12.14.
+ */
+
+.my-button {
+    margin: 10px;
+    font-family: sans-serif;
+
+    padding: 7px 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 100%;
+
+    border-radius: 0.5em;
+    box-shadow: 0 1px 4px 0 black;
+    background-color: #e6e6e6;
+}
+
+.my-button:hover {
+    background-color: #d1d1d1;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #000;
+}
+
+.button-extra-small {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-extra-large {
+    font-size: 125%;
+}
+
+.button-warning {
+    background-color: rgba(223, 117, 20, 0.60);
+}
+
+.button-warning:hover {
+    background-color: #df7514;
+}
+
+.button-error {
+    background-color: rgba(202, 60, 60, 0.61);
+}
+
+.button-error:hover {
+    background-color: #ca3c3c;
+}
+
+.button-success {
+    background-color: rgba(28, 184, 65, 0.60);
+}
+
+.button-success:hover {
+    background-color: #1cb841;
+}
+
+.button-info {
+    background-color: rgba(66, 184, 221, 0.60);
+}
+
+.button-info:hover {
+    background-color: #42b8dd;
+}
+
+.my-button.button-warning,
+.my-button.button-error,
+.my-button.button-success,
+.my-button.button-info {
+    color: #fff;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="bower_components/normalize.css" rel="stylesheet" type="text/css">
+    <link href="res/js/kladr/jquery.kladr.min.css" rel="stylesheet" type="text/css">
+    <link href="res/css/style.css" rel="stylesheet" type="text/css">
+    <script src="res/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+
+    <!-- This library provides support for input date element in IE8+ -->
+    <script src="res/js/polyfiller.js" type="text/javascript"></script>
+    <script src="res/js/modernizr.js"></script>
+    <script>
+        Modernizr.load({
+            test: Modernizr.inputtypes.date,
+            nope: "js/jquery-ui.custom.js",
+            callback: function() {
+                $("input[type=date]").datepicker();
+            }
+        });
+    </script>
+
+    <script src="res/js/kladr/jquery.kladr.min.js" type="text/javascript"></script>
+    <script src="res/js/main.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="page-wrapper">
+        <div class="column column-left">
+            &#9728;TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.<br/><br/><br/>
+            Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми.<br/>
+            Любое путешествие
+            начинается с поиска подходящих билетов и бронирования гостиниц.<br/>
+            А мы делаем это качественно, обеспечивая
+            самую лучшую поддержку благодаря собственному контакт-центру.
+        </div>
+        <div class="column column-right">
+            <div class="header-column-right">
+                <a class="header-link header-link-1" href="#">Личный кабинет OP</a>
+                <a class="header-link header-link-2" href="#">Раздел 1</a>
+                <a class="header-link header-link-3" href="#">Раздел 2</a>
+                <a class="header-link header-link-4" href="#">Раздел 3</a>
+                <a class="header-link header-link-5" href="#">Раздел 4</a>
+                <a class="header-link header-link-6" href="#">Раздел 5</a>
+            </div>
+            <div class="main">
+                <div class="main-header">
+                    <div class="main-header-title">Заполните форму</div>
+                    <div class="main-header-bar-container">
+                        <div class="main-header-bar main-header-bar-1 completed">1</div>
+                        <div class="main-header-bar main-header-bar-2 completed">2</div>
+                        <div class="main-header-bar main-header-bar-3 current">3</div>
+                        <div class="main-header-bar main-header-bar-4 incompleted">4</div>
+                        <div class="main-header-bar main-header-bar-5 incompleted">5</div>
+                    </div>
+                </div>
+                <form method="post" action="#">
+                    <div class="fieldset"><h1><span>Общая информация</span></h1></div>
+                    <div class="column-wrapper">
+                        <label>
+                            Фамилия<br/>
+                            <input class="form-text-input form-text-input-1" name="last-name" type="text">
+                        </label>
+                        <label>
+                            Имя<br/>
+                            <input class="form-text-input form-text-input-2" name="first-name" type="text">
+                        </label>
+                        <label>
+                            Отчество<br/>
+                            <input class="form-text-input form-text-input-3" name="add-name" type="text">
+                        </label>
+                        <label>
+                            Меняли фамилию?<br/>
+                            <input type="radio" name="change-last-name" id="yes">
+                            <label class="change-last-name" for="yes">Да</label>
+                            <input type="radio" name="change-last-name" id="no">
+                            <label class="change-last-name" for="no">Нет</label>
+                        </label>
+                        <label>
+                            Пол<br/>
+                            <input type="radio" name="gender" id="male">
+                            <label class="gender" for="male">Муж</label>
+                            <input type="radio" name="gender" id="female">
+                            <label class="gender" for="female">Жен</label>
+                        </label>
+                        <label>
+                            Семейное положение<br/>
+                            <select name="family-status" id="">
+                                <option value="married">Женат / Замужем</option>
+                                <option value="not-married">Не женат / Не замужем</option>
+                            </select>
+                        </label>
+                        <label>
+                            Гражданство
+                            <select id="citizenship" name="citizenship"></select>
+                        </label>
+                        <label>
+                            Дата рождения
+                            <input type="date" name="birthday-date">
+                        </label>
+                        <label id="city">
+                            Место рождения<br/>
+                            <input type="text" name="city">
+                            <div id="suggest">Например, <span>Москва</span></div>
+                        </label>
+                    </div>
+
+                    <div class="button-wrapper">
+                        <button id="button-back" name="button-back">&#8592; Назад</button>
+                        <button id="button-next" name="button-next" type="submit">Далее &#8594;</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
