@@ -15,7 +15,7 @@
 }
 
 .column {
-    height: 1000px;
+    /*height: 1000px;*/
 }
 
 .column-left {
@@ -61,10 +61,16 @@
             line-height: 16px;
 
             padding: 8px;
+            margin: 24px 0;
 
             vertical-align: middle;
 
+            box-shadow: 0 0 0 1px;
 
+        }
+
+        .page-nav-link:first-of-type {
+            margin-left: -4px;
         }
 
         .page-nav-link:not(:first-of-type) {
@@ -200,76 +206,76 @@
 
 /*}*/
 
-    .column-wrapper > label {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: bold;
-        width: 210px;
-        margin-right: 45px;
-        margin-bottom: 2em;
-    }
+.column-wrapper > label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    width: 210px;
+    margin-right: 45px;
+    margin-bottom: 2em;
+}
 
 .column-wrapper > label:nth-of-type(3n) {
     width: 260px;
     margin-right: 0;
 }
 
-        .column-wrapper input,
-        .column-wrapper select {
-            margin-top: 3px;
-        }
+    .column-wrapper input,
+    .column-wrapper select {
+        margin-top: 3px;
+    }
 
-        .column-wrapper input[type="radio"] {
-            display: none;
-        }
+    .column-wrapper input[type="radio"] {
+        display: none;
+    }
 
-        .column-wrapper input.form-text-input {
-            width: calc(100% - 4px);
-        }
+    .column-wrapper input.form-text-input {
+        width: calc(100% - 4px);
+    }
 
-        .column-wrapper select {
-            width: 100%;
-        }
+    .column-wrapper select {
+        width: 100%;
+    }
 
-        .column-wrapper select#citizenship:focus {
-            width: auto;
-            position: relative;
-        }
+    .column-wrapper select#citizenship:focus {
+        width: auto;
+        position: relative;
+    }
 
-        .column-wrapper label.change-last-name,
-        .column-wrapper label.gender {
-            display: inline-block;
-            /*width: 50px;*/
-            height: 24px;
-            border-radius: 5px;
-            font-weight: normal;
-            text-align: center;
-            cursor: pointer;
+    .column-wrapper label.change-last-name,
+    .column-wrapper label.gender {
+        display: inline-block;
+        /*width: 50px;*/
+        height: 24px;
+        border-radius: 5px;
+        font-weight: normal;
+        text-align: center;
+        cursor: pointer;
 
 
 
-            box-sizing: border-box;
-            padding: 4px 8px;
+        box-sizing: border-box;
+        padding: 4px 8px;
 
-        }
+    }
 
-        .column-wrapper label.change-last-name:after,
-        .column-wrapper label.gender:after {
-            border-bottom: 1px dotted #000000;
-            content: '';
-            display: block;
-        }
+    .column-wrapper label.change-last-name:after,
+    .column-wrapper label.gender:after {
+        border-bottom: 1px dotted #000000;
+        content: '';
+        display: block;
+    }
 
-        input[type="radio"]:checked + label.change-last-name,
-        input[type="radio"]:checked + label.gender {
-            background-color: #8cb903;
-            color: #fff;
-        }
+    input[type="radio"]:checked + label.change-last-name,
+    input[type="radio"]:checked + label.gender {
+        background-color: #8cb903;
+        color: #fff;
+    }
 
-        input[type="radio"]:checked + label.change-last-name:after,
-        input[type="radio"]:checked + label.gender:after {
-            display: none;
-        }
+    input[type="radio"]:checked + label.change-last-name:after,
+    input[type="radio"]:checked + label.gender:after {
+        display: none;
+    }
 
 /*.column-wrapper-3 {*/
     /*width: 260px;*/
