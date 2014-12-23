@@ -18,6 +18,10 @@
         margin: 0 5%;
 
     }
+
+    .column-wrapper > label:last-of-type {
+        max-width: 780px !important;
+    }
 }
 
 @media screen and (max-width: 880px) {
