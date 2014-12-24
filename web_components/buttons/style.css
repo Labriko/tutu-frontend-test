@@ -23,6 +23,11 @@
     background-color: #d1d1d1;
 }
 
+.my-button:active {
+    position: relative;
+    top: 2px;
+}
+
 a:link,
 a:visited,
 a:hover,

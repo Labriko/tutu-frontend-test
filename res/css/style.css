@@ -1,11 +1,8 @@
 #page-wrapper {
     width: 1024px;
     margin: 0 auto;
-
     font-family: sans-serif;
-
     font-size: 16px;
-
 }
 
 #page-wrapper:after {
@@ -14,21 +11,15 @@
     clear: both;
 }
 
-.column {
-    /*height: 1000px;*/
-}
-
 .column-left {
     float: left;
     width: 200px;
-
-    /*padding-top: 80px;*/
     font-size: 12px;
-
     padding-top: 180px;
-
-
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+
 }
 
 .column-right {
@@ -39,13 +30,9 @@
     .page-nav-column-right {
         height: 80px;
         border-radius: 15px;
-
         text-align: center;
-
-
         margin: 50px 0;
         box-shadow: 0 1px 5px 0 #ccc;
-
     }
 
     .page-nav-column-right:before { /* для IE8+ */
@@ -59,12 +46,9 @@
         .page-nav-link {
             display: inline-block;
             line-height: 16px;
-
             padding: 8px;
             margin: 24px 0;
-
             vertical-align: middle;
-
         }
 
         .page-nav-link:first-of-type {
@@ -103,17 +87,8 @@
             text-decoration: none;
         }
 
-    .main {
-        height: 530px;
-    }
-
-        .main-header {
-
-
-
-            /*vertical-align: middle;*/
-            /*height: 200px;*/
-            /*padding-top: 50px;*/
+        .main {
+            height: 530px;
         }
 
         .main-header:before { /* для IE8+ */
@@ -130,8 +105,6 @@
             clear: both;
         }
 
-
-
             .main-header-title {
                 display: inline-block;
                 font-size: 28px;
@@ -139,12 +112,10 @@
             }
 
             .main-header-bar-container {
-
                 display: inline-block;
                 vertical-align: middle;
                 position: relative;
                 bottom: 3px;
-
             }
 
             .main-header-bar {
@@ -153,14 +124,10 @@
                 height: 16px;
                 display: block;
                 float: left;
-
                 text-align: center;
                 font-size: 14px;
-
                 font-style: italic;
-
                 background: none;
-
                 box-shadow: inset 0 1px 3px 0 darkgray;
             }
 
@@ -178,177 +145,17 @@
 
             .main-header-bar.completed {
                 color: #fff;
-                /*background-color: #39a518;*/
                 background-image: linear-gradient(#339516, #36ab13);
             }
 
             .main-header-bar.current {
                 color: #fff;
-                /*background-color: #9ed105;*/
                 background-image: linear-gradient(#8bb804, #a4d807);
             }
 
             .main-header-bar.incompleted {
                 background-color: #f6f6f6;
             }
-
-/*.column-wrapper:after {*/
-    /*content: '';*/
-    /*display: table;*/
-    /*clear: both;*/
-/*}*/
-
-/*.column-wrapper {*/
-    /*width: 100%;*/
-    /*float: left;*/
-
-/*}*/
-
-.column-wrapper > label {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    width: 210px;
-    margin-right: 45px;
-    margin-bottom: 2em;
-}
-
-.column-wrapper > label:nth-of-type(3n) {
-    width: 260px;
-    margin-right: 0;
-}
-
-    .column-wrapper input,
-    .column-wrapper select {
-        margin-top: 3px;
-    }
-
-    .column-wrapper input[type="radio"] {
-        display: none;
-    }
-
-    .column-wrapper input.form-text-input {
-        width: calc(100% - 4px);
-    }
-
-    .column-wrapper select {
-        width: 100%;
-    }
-
-    .column-wrapper select#citizenship:focus {
-        width: auto;
-        position: relative;
-    }
-
-    .column-wrapper label.change-last-name,
-    .column-wrapper label.gender {
-        display: inline-block;
-        /*width: 50px;*/
-        height: 24px;
-        border-radius: 5px;
-        font-weight: normal;
-        text-align: center;
-        cursor: pointer;
-
-
-
-        box-sizing: border-box;
-        padding: 4px 8px;
-
-    }
-
-    .column-wrapper label.change-last-name:after,
-    .column-wrapper label.gender:after {
-        border-bottom: 1px dotted #000000;
-        content: '';
-        display: block;
-    }
-
-    input[type="radio"]:checked + label.change-last-name,
-    input[type="radio"]:checked + label.gender {
-        background-color: #8cb903;
-        color: #fff;
-    }
-
-    input[type="radio"]:checked + label.change-last-name:after,
-    input[type="radio"]:checked + label.gender:after {
-        display: none;
-    }
-
-/*.column-wrapper-3 {*/
-    /*width: 260px;*/
-/*}*/
-
-/*.column-wrapper:not(:last-of-type) {*/
-    /*margin-right: 45px;*/
-/*}*/
-
-
-label#city {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-
-    /*box-shadow: 0 0 0 1px red;*/
-    width: 100%;
-}
-
-    label input {
-        width: calc(100% - 4px);
-
-    }
-
-#suggest {
-    color: #af9d9f;
-    font-size: 12px;
-    font-weight: normal;
-
-    margin-top: 0.5em;
-
-}
-
-#suggest span {
-    cursor: pointer;
-    border-bottom: 1px dotted darkred;
-}
-
-#suggest span:hover {
-    color: darkred;
-}
-
-.button-wrapper {
-    background: #f2f2f2;
-}
-
-.button-wrapper #button-back {
-    background-color: #bcbcbc;
-    /*box-shadow: inset 0 -2px 5px 0 black, inset 0 0 0 100px #bcbcbc;*/
-    box-shadow: inset 0 -2px 5px 0 #7e7e7e, inset 0 2px 5px 0 #fff;
-}
-
-.button-wrapper #button-next {
-    float: right;
-    background-color: #a4d807;
-    /*box-shadow: inset 0 -2px 5px 0 black, inset 0 0 0 100px #bcbcbc;*/
-    box-shadow: inset 0 -2px 5px 0 #7da703, inset 0 2px 5px 0 #fff;
-}
-
-    .button-wrapper button {
-        width: 140px;
-        height: 40px;
-
-        font-size: 16px;
-        cursor: pointer;
-
-
-
-        color: #fff;
-        margin: 15px 10px;
-        border: none;
-        border-radius: 20px;
-        /*padding: 10px 15px;*/
-    }
-
 
 .fieldset {
     border-top: none;
@@ -378,3 +185,124 @@ label#city {
     position: relative;
     top: 0.6em;
 }
+
+.label-wrapper > label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    width: 210px;
+    margin-right: 45px;
+    margin-bottom: 2em;
+}
+
+.label-wrapper > label:nth-of-type(3n) {
+    width: 260px;
+    margin-right: 0;
+}
+
+    .label-wrapper input,
+    .label-wrapper select {
+        margin-top: 3px;
+    }
+
+    .label-wrapper input[type="radio"] {
+        display: none;
+    }
+
+    .label-wrapper input.form-text-input {
+        width: calc(100% - 4px);
+    }
+
+    .label-wrapper select {
+        width: 100%;
+    }
+
+    .label-wrapper select#citizenship:focus {
+        width: auto;
+        position: relative;
+    }
+
+    .label-wrapper label.change-last-name,
+    .label-wrapper label.gender {
+        display: inline-block;
+        height: 24px;
+        border-radius: 5px;
+        font-weight: normal;
+        text-align: center;
+        cursor: pointer;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 4px 8px;
+    }
+
+    .label-wrapper label.change-last-name:after,
+    .label-wrapper label.gender:after {
+        border-bottom: 1px dotted #000000;
+        content: '';
+        display: block;
+    }
+
+    input[type="radio"]:checked + label.change-last-name,
+    input[type="radio"]:checked + label.gender {
+        background-color: #8cb903;
+        color: #fff;
+    }
+
+    input[type="radio"]:checked + label.change-last-name:after,
+    input[type="radio"]:checked + label.gender:after {
+        display: none;
+    }
+
+label#city {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+
+    label input {
+        width: calc(100% - 4px);
+    }
+
+#suggest {
+    color: #af9d9f;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0.5em;
+}
+
+#suggest span {
+    cursor: pointer;
+    border-bottom: 1px dotted darkred;
+}
+
+#suggest span:hover {
+    color: darkred;
+}
+
+.button-wrapper {
+    background: #f2f2f2;
+}
+
+.button-wrapper #button-back {
+    background-color: #bcbcbc;
+    box-shadow: inset 0 -2px 5px 0 #7e7e7e, inset 0 2px 5px 0 #fff;
+}
+
+.button-wrapper #button-next {
+    float: right;
+    background-color: #a4d807;
+    box-shadow: inset 0 -2px 5px 0 #7da703, inset 0 2px 5px 0 #fff;
+}
+
+    .button-wrapper button {
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        color: #fff;
+        margin: 15px 10px;
+        border: none;
+        border-radius: 20px;
+    }

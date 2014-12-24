@@ -16,28 +16,18 @@
         float: left;
         width: 90%;
         margin: 0 5%;
-
     }
 
-    .column-wrapper > label:last-of-type {
+    .label-wrapper > label:last-of-type {
         max-width: 780px !important;
     }
 
-
-
-
-
-
-
-    .column-wrapper > label {
+    .label-wrapper > label {
         width: 30% !important;
-
-
         margin-right: 4% !important;
     }
 
-
-    .column-wrapper > label:nth-of-type(3n) {
+    .label-wrapper > label:nth-of-type(3n) {
         margin-right: 0 !important;
     }
 
@@ -46,15 +36,13 @@
     }
 
     .main-header-bar-container {
-        /*float: right;*/
         position: absolute;
         right: 0;
         bottom: 6px;
-
     }
-
-
 }
+
+
 
 @media screen and (max-width: 881px) {
     .page-nav-column-right {
@@ -71,76 +59,54 @@
     .page-nav-link {
         display: block;
         margin: 2px 0 !important;
-        /*vertical-align: baseline;*/
     }
 
-
-
-    .column-wrapper > label {
+    .label-wrapper > label {
         width: 45% !important;
-
-
         margin-right: 9% !important;
     }
 
-    .column-wrapper > label:nth-of-type(3n) {
+    .label-wrapper > label:nth-of-type(3n) {
         margin-right: 9% !important;
     }
 
-    .column-wrapper > label:nth-of-type(2n) {
+    .label-wrapper > label:nth-of-type(2n) {
         margin-right: 0 !important;
     }
 
-    .column-wrapper > label:last-of-type {
+    .label-wrapper > label:last-of-type {
         width: 100% !important;
     }
 
-
-
     .main-header {
-
-
         text-align: center;
-        /*vertical-align: middle;*/
-        /*height: 200px;*/
-        /*padding-top: 50px;*/
     }
 
     .main-header-title {
         width: 100%;
     }
-    .main-header-bar-container {
-        /*width: 100%;*/
-        text-align: center;
 
+    .main-header-bar-container {
+        text-align: center;
         margin: 0 auto;
     }
-
-
-
-
 
     .main-header {
         position: static;
     }
 
     .main-header-bar-container {
-        /*float: right;*/
         position: static;
         bottom: 3px;
-
     }
-
 }
 
 
+
 @media screen and (max-width: 650px) {
-    .column-wrapper > label {
+    .label-wrapper > label {
         width: 100% !important;
         text-align: center;
-
-
-        /*margin-right: 9% !important;*/
     }
 
     .main-header-bar-container {
