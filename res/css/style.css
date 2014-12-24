@@ -32,6 +32,8 @@
         border-radius: 15px;
         text-align: center;
         margin: 50px 0;
+        -moz-box-shadow: 0 1px 5px 0 #ccc;
+        -webkit-box-shadow: 0 1px 5px 0 #ccc;
         box-shadow: 0 1px 5px 0 #ccc;
     }
 
@@ -128,6 +130,8 @@
                 font-size: 14px;
                 font-style: italic;
                 background: none;
+                -moz-box-shadow: inset 0 1px 3px 0 darkgray;
+                -webkit-box-shadow: inset 0 1px 3px 0 darkgray;
                 box-shadow: inset 0 1px 3px 0 darkgray;
             }
 
@@ -287,12 +291,16 @@ label#city {
 
 .button-wrapper #button-back {
     background-color: #bcbcbc;
+    -moz-box-shadow: inset 0 -2px 5px 0 #7e7e7e, inset 0 2px 5px 0 #fff;
+    -webkit-box-shadow: inset 0 -2px 5px 0 #7e7e7e, inset 0 2px 5px 0 #fff;
     box-shadow: inset 0 -2px 5px 0 #7e7e7e, inset 0 2px 5px 0 #fff;
 }
 
 .button-wrapper #button-next {
     float: right;
     background-color: #a4d807;
+    -moz-box-shadow: inset 0 -2px 5px 0 #7da703, inset 0 2px 5px 0 #fff;
+    -webkit-box-shadow: inset 0 -2px 5px 0 #7da703, inset 0 2px 5px 0 #fff;
     box-shadow: inset 0 -2px 5px 0 #7da703, inset 0 2px 5px 0 #fff;
 }
 
