@@ -135,5 +135,32 @@
 
 
 @media screen and (max-width: 650px) {
+    .column-wrapper > label {
+        width: 100% !important;
+        text-align: center;
 
+
+        /*margin-right: 9% !important;*/
+    }
+
+    .main-header-bar-container {
+        display: none;
+    }
+
+    .button-wrapper {
+        margin-bottom: 10%;
+    }
+
+    .button-wrapper button {
+        margin: 0;
+        width: 40%;
+    }
+
+    .button-wrapper button:first-of-type {
+        margin-right: 10%;
+    }
+
+    .button-wrapper button:last-of-type {
+        margin-left: 10%;
+    }
 }
